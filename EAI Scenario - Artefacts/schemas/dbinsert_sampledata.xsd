@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" 
+  targetNamespace="http://schemas.microsoft.com/Sql/2008/05/TableOp/dbo/ordersax" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation=".\dbinsert_sampledata1.xsd" namespace="http://schemas.microsoft.com/Sql/2008/05/Types/Tables/dbo" />
+  <xs:element name="Insert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Rows">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" xmlns:q1="http://schemas.microsoft.com/Sql/2008/05/Types/Tables/dbo" ref="q1:ordersax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
